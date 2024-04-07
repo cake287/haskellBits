@@ -1,6 +1,8 @@
 import Data.Char
 import Data.List
 
+help = putStrLn "To generate a table, call: table <expression>\nFor example: table \"A.B | C\"\nUse any of the following to create an expression:\n- Numbers 0 and 1\n- Letters A-Z\n- Operators + | . -> = !"
+
 
 isVar :: Char -> Bool
 isVar c = let n = ord c in (n >= 97 && n <= 122) || (n >= 65 && n <= 90)
